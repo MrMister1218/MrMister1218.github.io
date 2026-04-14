@@ -123,5 +123,5 @@ projects:
 
 resume:
   enabled: true
-  pdf: "./assets/cv/cv.pdf"
+  pdf: "./Resume_Dylan.pdf"
   message: "Interested in my full background? Download my resume for a complete overview."
