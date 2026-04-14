@@ -82,7 +82,8 @@ def make_skills(p: dict) -> str:
     for grp in p.get('skills', []):
         cat   = tex_esc(grp.get('category', ''))
         items = [tex_esc(i) for i in grp.get('items', [])]
-        groups.append(f"    \\skillgroup{{{cat}}}{{{'  \\quad  '.join(items)}}}")
+        items_s = '  \\quad  '.join(items)
+        groups.append(f"    \\skillgroup{{{cat}}}{{{items_s}}}")
     return "\n".join(groups)
 
 def make_projects(p: dict) -> str:
