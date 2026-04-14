@@ -84,7 +84,7 @@ title: Dylan Zhou — Data Engineer
 
   <div class="project-card">
     <h3><i class="fas fa-chart-bar" style="color: var(--primary); font-size: 0.9em;"></i> Financial News Sentiment Analysis</h3>
-    <span class="project-year">2026 — Group Project</span>
+    <span class="project-year">2026.03 – 2025.04</span>
     <p>Automated financial news sentiment analysis to assist investment decision-making by classifying headlines as Positive, Neutral, or Negative — addressing severe class imbalance (Negative at only 12.5%).</p>
     <ul>
       <li><strong>Data:</strong> Financial Phrasebank — 4,846 professionally annotated English sentences</li>
@@ -100,7 +100,7 @@ title: Dylan Zhou — Data Engineer
 
   <div class="project-card">
     <h3><i class="fas fa-car" style="color: var(--primary); font-size: 0.9em;"></i> Real-Time License Plate Recognition System (ALPR)</h3>
-    <span class="project-year">2025.03 – 2025.05</span>
+    <span class="project-year">2026.03 – 2025.04</span>
     <p>Global vehicle population growth has created urgent demand for automated traffic management. Traditional ALPR systems relying on hand-crafted features fail under real-world conditions such as variable lighting, motion blur, and diverse plate formats. This project developed a deep learning-based ALPR system to automatically detect and recognize license plates from images and video streams in real time.</p>
     <ul>
       <li><strong>Data:</strong> COCO pre-trained YOLOv8 for vehicle detection; Roboflow license plate dataset (~5,000 images, YOLO format) fine-tuned on Hong Kong plate formats — supporting English letters + digits including special and personalized plates</li>
