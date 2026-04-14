@@ -99,14 +99,14 @@ title: Dylan Zhou — Data Engineer
   </div>
 
   <div class="project-card">
-    <h3><i class="fas fa-car" style="color: var(--primary); font-size: 0.9em;"></i> Real-time License Plate Recognition</h3>
-    <span class="project-year">2026</span>
-    <p>High-speed vehicle identification system for smart parking management — automating entry/exit tracking with real-time computer vision.</p>
+    <h3><i class="fas fa-car" style="color: var(--primary); font-size: 0.9em;"></i> Real-Time License Plate Recognition System (ALPR)</h3>
+    <span class="project-year">2025.03 – 2025.05</span>
+    <p>Global vehicle population growth has created urgent demand for automated traffic management. Traditional ALPR systems relying on hand-crafted features fail under real-world conditions such as variable lighting, motion blur, and diverse plate formats. This project developed a deep learning-based ALPR system to automatically detect and recognize license plates from images and video streams in real time.</p>
     <ul>
-      <li><strong>Approach:</strong> Real-time object detection pipeline using YOLOv8, optimized for low-latency inference</li>
-      <li><strong>Hardware:</strong> RTX 4080 environment configuration for accelerated training and inference</li>
-      <li><strong>Result:</strong> <strong>95%+ detection accuracy</strong> across diverse lighting conditions</li>
-      <li><strong>Contribution:</strong> End-to-end model training, environment setup, and backend integration</li>
+      <li><strong>Data:</strong> COCO pre-trained YOLOv8 for vehicle detection; Roboflow license plate dataset (~5,000 images, YOLO format) fine-tuned on Hong Kong plate formats — supporting English letters + digits including special and personalized plates</li>
+      <li><strong>Approach:</strong> Two-stage cascade detection: YOLOv8 (COCO) → YOLOv8 (fine-tuned) for plate localization; EasyOCR CRNN (CNN + LSTM + CTC Loss) for OCR; 4-step preprocessing pipeline: 2.5× super-resolution → grayscale → bilateral filtering → Otsu binarization; track-by-position + OCR frequency voting for temporal stability</li>
+      <li><strong>Outcome:</strong> Built a complete Streamlit Web app with four input modes (image upload, photo capture, video upload, WebRTC live camera); static image recognition achieved 95–100% accuracy; structured CSV export for downstream traffic management systems; modular architecture enables independent module upgrades</li>
+      <li><strong>Contribution:</strong> Led the design and implementation of the Streamlit Web front-end including WebRTC live streaming and real-time result display; fine-tuned YOLOv8 via transfer learning with optimized confidence thresholds and NMS parameters; performed dataset annotation and quality review; designed Hong Kong plate format validation rules and position-aware character correction heuristics; integrated all modules into an end-to-end pipeline</li>
     </ul>
     <a class="project-link" href="https://github.com/yiplm/automatic-license-plate-recognition" target="_blank">
       <i class="fab fa-github"></i> View on GitHub
