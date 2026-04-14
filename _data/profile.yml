@@ -3,7 +3,7 @@
 # =============================================
 
 name: "Dylan Zhou"
-title: "Data Engineer"
+title: "Data Engineer / Data Analyst / AI Engineer / Recommendation Algorithm Engineer"
 subtitle: "Aspiring Data Engineer specializing in Big Data pipelines, Real-time AI, and scalable ML systems — bridging robust backend architecture with advanced data analytics."
 status: "Open to Work"
 avatar_initials: "DZ"
@@ -123,5 +123,5 @@ projects:
 
 resume:
   enabled: true
-  pdf: "./Resume_Dylan.pdf"
+  pdf: "./assets/cv/cv.pdf"
   message: "Interested in my full background? Download my resume for a complete overview."
