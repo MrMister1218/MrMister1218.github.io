@@ -27,6 +27,8 @@ title: Dylan Zhou — Data Engineer
   <h2 class="section-title"><span class="num">01</span> About Me</h2>
   <div class="about-text">
     I am a <strong>Master of Science in Data Science</strong> student at Lingnan University, expected to graduate in <strong>August 2026</strong>. With a solid background in full-stack software development (Java / Vue), I specialize in bridging the gap between robust backend architecture and advanced data analytics. My focus lies in building scalable data infrastructures and deploying high-performance machine learning models in production environments. I am a proactive problem solver with a passion for optimizing distributed systems and real-time computer vision applications.
+    <br><br>
+    I am proficient in <strong>prompt engineering</strong>, skilled in <strong>vibe coding</strong>, and highly experienced with <strong>Claude Code</strong> and a wide range of its skills — enabling rapid prototyping and end-to-end development across the full stack.
   </div>
 </div>
 
