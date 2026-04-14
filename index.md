@@ -1,55 +1,162 @@
 ---
 layout: home
-title: Dylan's Portfolio
+title: Dylan Zhou — Data Engineer
 ---
 
-## 1) Home / Headline
-[cite_start]**Aspiring Data Engineer seeking to leverage expertise in Big Data pipelines and Real-time AI for impactful business solutions.** [cite: 13]
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-avatar">DZ</div>
+  <h1>Dylan Zhou</h1>
+  <p class="hero-sub">
+    Aspiring Data Engineer with expertise in Big Data pipelines and Real-time AI,
+    seeking to leverage data-driven solutions for impactful business outcomes.
+  </p>
+  <div class="hero-tags">
+    <span class="hero-tag">Data Engineering</span>
+    <span class="hero-tag">Big Data</span>
+    <span class="hero-tag">Python</span>
+    <span class="hero-tag">SQL</span>
+    <span class="hero-tag">PySpark</span>
+    <span class="hero-tag">YOLOv8</span>
+    <span class="hero-tag">Computer Vision</span>
+  </div>
+</div>
 
-[cite_start]`Data Engineering` / `Big Data Analytics` / `Python` / `SQL` / `PySpark` / `YOLOv8` [cite: 13]
+<!-- ABOUT -->
+<div class="section">
+  <h2 class="section-title"><span class="num">01</span> About Me</h2>
+  <div class="about-text">
+    I am a <strong>Master of Science in Data Science</strong> student at Lingnan University, expected to graduate in <strong>August 2026</strong>. With a solid background in full-stack software development (Java / Vue), I specialize in bridging the gap between robust backend architecture and advanced data analytics. My focus lies in building scalable data infrastructures and deploying high-performance machine learning models in production environments. I am a proactive problem solver with a passion for optimizing distributed systems and real-time computer vision applications.
+  </div>
+</div>
 
----
+<!-- SKILLS -->
+<div class="section">
+  <h2 class="section-title"><span class="num">02</span> Skills</h2>
+  <div class="skills-grid">
 
-## 2) About Me
-[cite_start]I am a Master of Science in Data Science student at Lingnan University, expected to graduate in August 2026[cite: 16]. [cite_start]With a solid background in full-stack software development (Java/Vue), I specialize in bridging the gap between robust backend architecture and advanced data analytics[cite: 15]. [cite_start]My focus lies in building scalable data infrastructures and deploying high-performance machine learning models in production environments[cite: 17]. [cite_start]I am a proactive problem solver with a passion for optimizing distributed systems and real-time computer vision applications[cite: 17].
+    <div class="skill-card">
+      <h3><i class="fas fa-code"></i> Programming</h3>
+      <ul>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>Java (Spring Boot)</li>
+        <li>JavaScript / Vue</li>
+      </ul>
+    </div>
 
----
+    <div class="skill-card">
+      <h3><i class="fas fa-chart-line"></i> Data & ML</h3>
+      <ul>
+        <li>PySpark</li>
+        <li>PyTorch</li>
+        <li>Transformers (BERT / FinBERT)</li>
+        <li>Pandas, Scikit-learn</li>
+      </ul>
+    </div>
 
-## 3) Skills
-* [cite_start]**Technical Skills:** Python, SQL, Java (Spring Boot), Distributed Computing, Natural Language Processing (NLP), Computer Vision, Statistics[cite: 19].
-* [cite_start]**Business Skills:** Problem Framing, A/B Testing, Metrics Design, Reporting/Storytelling[cite: 20].
-* [cite_start]**Tools:** PySpark, PyTorch, Transformers (BERT), Pandas, Scikit-learn, Tableau, Matplotlib, Git, Docker, IntelliJ IDEA, PyCharm[cite: 21].
+    <div class="skill-card">
+      <h3><i class="fas fa-brain"></i> Specializations</h3>
+      <ul>
+        <li>Natural Language Processing</li>
+        <li>Computer Vision</li>
+        <li>Distributed Computing</li>
+        <li>Statistics & A/B Testing</li>
+      </ul>
+    </div>
 
----
+    <div class="skill-card">
+      <h3><i class="fas fa-toolbox"></i> Tools</h3>
+      <ul>
+        <li>Tableau, Matplotlib</li>
+        <li>Docker, Git</li>
+        <li>IntelliJ IDEA, PyCharm</li>
+        <li>YOLOv8, BiLSTM + Attention</li>
+      </ul>
+    </div>
 
-## [cite_start]4) Projects (Portfolio) [cite: 22]
+  </div>
+</div>
 
-### Financial News Sentiment Analysis (Group Project)
-* [cite_start]**Time:** 2026 [cite: 24]
-* [cite_start]**Problem:** Developed an automated financial news sentiment analysis system to assist investment decision-making by classifying headlines into Positive, Neutral, or Negative, while addressing severe class imbalance (e.g., Negative labels at 12.5%)[cite: 26].
-* [cite_start]**Data:** Financial Phrasebank dataset containing 4,846 professionally annotated English sentences[cite: 26].
-* **Approach:** Compared BiLSTM + Attention (with class-weighted CrossEntropyLoss and Label Smoothing) against a fine-tuned FinBERT model. [cite_start]Implemented class weights as $$w_c = \sqrt{\frac{N}{C \times N_c}}$$ to mitigate imbalance[cite: 27].
-* **Outcome/Impact:** The BiLSTM + Label Smoothing model achieved 89.0% test accuracy, surpassing the FinBERT baseline (87.8%). [cite_start]Confirmed that Label Smoothing effectively regularizes models on small-domain datasets[cite: 28].
-* [cite_start]**Your Contribution:** Led the experimental design, implemented the BiLSTM + Attention architecture, debugged the class weight logic, and generated all visualizations and the final academic report[cite: 29].
-* [cite_start]**Links:** [[Github Repo/Report Link](https://github.com/MrMister1218/CDS525-SentimentAnalysis)] [cite: 30]
+<!-- PROJECTS -->
+<div class="section">
+  <h2 class="section-title"><span class="num">03</span> Projects</h2>
 
-### Real-time License Plate Recognition System
-* [cite_start]**Time:** 2026 [cite: 24]
-* [cite_start]**Problem:** Built a high-speed vehicle identification system for smart parking management to automate entry/exit tracking[cite: 26].
-* [cite_start]**Data:** Utilized custom annotated datasets of vehicle images for robust model generalization[cite: 26].
-* [cite_start]**Approach:** Deployed a real-time object detection pipeline using YOLOv8, optimized for low-latency inference using Python[cite: 27].
-* [cite_start]**Outcome:** Achieved 95%+ detection accuracy in diverse lighting conditions and delivered a functional prototype[cite: 28].
-* [cite_start]**Your Contribution:** Responsible for end-to-end model training, environment configuration (RTX 4080 optimization), and backend integration[cite: 29].
-* [cite_start]**Links:** [G[ithub Repo Link](https://github.com/yiplm/automatic-license-plate-recognition)] [cite: 30]
+  <div class="project-card">
+    <h3><i class="fas fa-chart-bar" style="color: var(--primary); font-size: 0.9em;"></i> Financial News Sentiment Analysis</h3>
+    <span class="project-year">2026 — Group Project</span>
+    <p>Automated financial news sentiment analysis to assist investment decision-making by classifying headlines as Positive, Neutral, or Negative — addressing severe class imbalance (Negative at only 12.5%).</p>
+    <ul>
+      <li><strong>Data:</strong> Financial Phrasebank — 4,846 professionally annotated English sentences</li>
+      <li><strong>Approach:</strong> BiLSTM + Attention (class-weighted CrossEntropyLoss + Label Smoothing) vs. fine-tuned FinBERT baseline</li>
+      <li><strong>Key insight:</strong> Imbalance handled via <code>w_c = sqrt(N / (C × N_c))</code>; Label Smoothing regularizes small-domain data</li>
+      <li><strong>Result:</strong> BiLSTM + Label Smoothing achieved <strong>89.0% accuracy</strong>, outperforming FinBERT (87.8%)</li>
+      <li><strong>Contribution:</strong> Led experimental design, implemented the BiLSTM + Attention architecture, built all visualizations and the final academic report</li>
+    </ul>
+    <a class="project-link" href="https://github.com/MrMister1218/CDS525-SentimentAnalysis" target="_blank">
+      <i class="fab fa-github"></i> View on GitHub
+    </a>
+  </div>
 
----
+  <div class="project-card">
+    <h3><i class="fas fa-car" style="color: var(--primary); font-size: 0.9em;"></i> Real-time License Plate Recognition</h3>
+    <span class="project-year">2026</span>
+    <p>High-speed vehicle identification system for smart parking management — automating entry/exit tracking with real-time computer vision.</p>
+    <ul>
+      <li><strong>Approach:</strong> Real-time object detection pipeline using YOLOv8, optimized for low-latency inference</li>
+      <li><strong>Hardware:</strong> RTX 4080 environment configuration for accelerated training and inference</li>
+      <li><strong>Result:</strong> <strong>95%+ detection accuracy</strong> across diverse lighting conditions</li>
+      <li><strong>Contribution:</strong> End-to-end model training, environment setup, and backend integration</li>
+    </ul>
+    <a class="project-link" href="https://github.com/yiplm/automatic-license-plate-recognition" target="_blank">
+      <i class="fab fa-github"></i> View on GitHub
+    </a>
+  </div>
+</div>
 
-## 5) Resume / CV
-[cite_start][📄 Download My Professional Resume (PDF)](./Resume_Dylan.pdf) [cite: 32]
+<!-- RESUME -->
+<div class="section">
+  <h2 class="section-title"><span class="num">04</span> Resume</h2>
+  <div class="resume-block">
+    <p>Interested in my full background? Download my resume for a complete overview.</p>
+    <a class="resume-btn" href="./Resume_Dylan.pdf" target="_blank">
+      <i class="fas fa-file-pdf"></i> Download Resume (PDF)
+    </a>
+  </div>
+</div>
 
----
+<!-- CONTACT -->
+<div class="section">
+  <h2 class="section-title"><span class="num">05</span> Contact</h2>
+  <div class="contact-grid">
 
-## 6) Contact
-* [cite_start]**Email:** [chouyuhsiang1218@gmail.com] [cite: 35]
-* [cite_start]**GitHub:** [https://github.com/MrMister1218](https://github.com/hyperion2k) [cite: 36]
-* [cite_start]**LinkedIn:** [Your LinkedIn Profile] [cite: 36]
+    <a class="contact-card" href="mailto:chouyuhsiang1218@gmail.com">
+      <div class="contact-icon email"><i class="fas fa-envelope"></i></div>
+      <div class="contact-info">
+        <div class="label">Email</div>
+        <div class="value">chouyuhsiang1218@gmail.com</div>
+      </div>
+    </a>
+
+    <a class="contact-card" href="https://github.com/MrMister1218" target="_blank">
+      <div class="contact-icon github"><i class="fab fa-github"></i></div>
+      <div class="contact-info">
+        <div class="label">GitHub</div>
+        <div class="value">@MrMister1218</div>
+      </div>
+    </a>
+
+    <a class="contact-card" href="#">
+      <div class="contact-icon linkedin"><i class="fab fa-linkedin-in"></i></div>
+      <div class="contact-info">
+        <div class="label">LinkedIn</div>
+        <div class="value">Dylan Zhou</div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<footer class="page-footer">
+  Designed &amp; built by <strong>Dylan Zhou</strong> · {{ site.time | date: '%Y' }} · Powered by GitHub Pages
+</footer>
