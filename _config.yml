@@ -1,32 +1,17 @@
 title: "Dylan Zhou"
 description: "Aspiring Data Engineer | Big Data & Real-time AI"
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+theme: minima
 github:
   repository_url: https://github.com/MrMister1218/MrMister1218.github.io
 
-minimal_mistakes:
-  name: "Dylan Zhou"
-  bio: "Data Engineer"
-  location: "Hong Kong"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/MrMister1218"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/dylanzhou"
-
-  defaults:
-    - scope:
-        path: ""
-        type: pages
-      values:
-        layout: single
-        author_profile: true
-        read_time: false
-        comments: false
-        share: false
-        related: false
-
-paginate: 100
-paginate_path: /page:num/
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: home
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
