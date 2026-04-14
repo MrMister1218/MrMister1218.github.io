@@ -89,7 +89,7 @@ title: Dylan Zhou — Data Engineer
 
   <div class="glass project-card">
     <h3><i class="fas fa-chart-bar" style="color: var(--primary);"></i> Financial News Sentiment Analysis</h3>
-    <span class="project-year">2026 — Group Project</span>
+    <span class="project-year">Feb 2026 – Apr 2026</span>
     <p>Automated financial news sentiment analysis to assist investment decision-making by classifying headlines as Positive, Neutral, or Negative — addressing severe class imbalance (Negative at only 12.5%).</p>
     <ul>
       <li><strong>Data:</strong> Financial Phrasebank — 4,846 professionally annotated English sentences</li>
@@ -105,7 +105,7 @@ title: Dylan Zhou — Data Engineer
 
   <div class="glass project-card">
     <h3><i class="fas fa-house" style="color: var(--primary);"></i> House Price Prediction with Machine Learning Ensemble</h3>
-    <span class="project-year">Sep 2024 – Apr 2025</span>
+    <span class="project-year">Feb 2026 – Apr 2026</span>
     <p>Predicted residential house sale prices to assist real estate valuation and investment decision-making, addressing the need for accurate, data-driven pricing in the housing market.</p>
     <ul>
       <li><strong>Data:</strong> Kaggle Ames Housing dataset — 1,460 training samples, 81 raw features including physical attributes (area, year built, quality ratings) and categorical variables (zoning, neighborhood, sale condition)</li>
@@ -119,7 +119,7 @@ title: Dylan Zhou — Data Engineer
 
   <div class="glass project-card">
     <h3><i class="fas fa-car" style="color: var(--primary);"></i> Real-Time License Plate Recognition System (ALPR)</h3>
-    <span class="project-year">2025.03 – 2025.05</span>
+    <span class="project-year">Feb 2026 – Apr 2026</span>
     <p>Global vehicle population growth has created urgent demand for automated traffic management. This project developed a deep learning-based ALPR system to automatically detect and recognize license plates from images and video streams in real time.</p>
     <ul>
       <li><strong>Data:</strong> COCO pre-trained YOLOv8 for vehicle detection; Roboflow license plate dataset (~5,000 images, YOLO format) fine-tuned on Hong Kong plate formats — supporting English letters + digits including special and personalized plates</li>
