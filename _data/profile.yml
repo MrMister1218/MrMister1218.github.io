@@ -1,0 +1,127 @@
+# =============================================
+# 个人资料配置文件
+# =============================================
+
+name: "Dylan Zhou"
+title: "Data Engineer"
+subtitle: "Aspiring Data Engineer specializing in Big Data pipelines, Real-time AI, and scalable ML systems — bridging robust backend architecture with advanced data analytics."
+status: "Open to Work"
+avatar_initials: "DZ"
+avatar_image: "./assets/img/avatar.jpg"   # 优先使用图片；留空则显示首字母
+location: "Hong Kong"
+
+contact:
+  email: "chouyuhsiang1218@gmail.com"
+  github: "https://github.com/MrMister1218"
+  github_handle: "@MrMister1218"
+  linkedin: "#"
+  linkedin_handle: "Dylan Zhou"
+
+hero_tags:
+  - "Data Engineering"
+  - "PySpark"
+  - "Python"
+  - "SQL"
+  - "Computer Vision"
+  - "NLP"
+  - "YOLOv8"
+  - "XGBoost"
+
+about:
+  education:
+    - degree: "Master of Science in Data Science"
+      school: "Lingnan University"
+      graduation: "August 2026"
+  background:
+    - "With a solid background in full-stack software development (Java / Vue), I specialize in bridging the gap between robust backend architecture and advanced data analytics."
+    - "My focus lies in building scalable data infrastructures and deploying high-performance machine learning models in production environments."
+    - "I am a proactive problem solver with a passion for optimizing distributed systems and real-time computer vision applications."
+  extra:
+    - "I am proficient in <strong>prompt engineering</strong>, skilled in <strong>vibe coding</strong>, and highly experienced with <strong>Claude Code</strong> and a wide range of its skills — enabling rapid prototyping and end-to-end development across the full stack."
+
+skills:
+  - category: "Programming"
+    icon: "fa-code"
+    items:
+      - "Python"
+      - "SQL"
+      - "Java (Spring Boot)"
+      - "JavaScript / Vue"
+
+  - category: "Data & ML"
+    icon: "fa-chart-line"
+    items:
+      - "PySpark"
+      - "PyTorch"
+      - "Transformers (BERT / FinBERT)"
+      - "Pandas, Scikit-learn"
+
+  - category: "Specializations"
+    icon: "fa-brain"
+    items:
+      - "Natural Language Processing"
+      - "Computer Vision"
+      - "Distributed Computing"
+      - "Statistics & A/B Testing"
+
+  - category: "Tools"
+    icon: "fa-toolbox"
+    items:
+      - "Tableau, Matplotlib"
+      - "Docker, Git"
+      - "IntelliJ IDEA, PyCharm"
+      - "YOLOv8, BiLSTM + Attention"
+
+projects:
+  - title: "Financial News Sentiment Analysis"
+    icon: "fa-chart-bar"
+    period: "Feb 2026 – Apr 2026"
+    tag: "Group Project"
+    description: "Automated financial news sentiment analysis to assist investment decision-making by classifying headlines as Positive, Neutral, or Negative — addressing severe class imbalance (Negative at only 12.5%)."
+    details:
+      - key: "Data"
+        val: "Financial Phrasebank — 4,846 professionally annotated English sentences"
+      - key: "Approach"
+        val: "BiLSTM + Attention (class-weighted CrossEntropyLoss + Label Smoothing) vs. fine-tuned FinBERT baseline"
+      - key: "Key insight"
+        val: "Imbalance handled via <code>w_c = sqrt(N / (C × N_c))</code>; Label Smoothing regularizes small-domain data"
+      - key: "Result"
+        val: "BiLSTM + Label Smoothing achieved <strong>89.0% accuracy</strong>, outperforming FinBERT (87.8%)"
+      - key: "Contribution"
+        val: "Led experimental design, implemented the BiLSTM + Attention architecture, built all visualizations and the final academic report"
+    github: "https://github.com/MrMister1218/CDS525-SentimentAnalysis"
+
+  - title: "House Price Prediction with Machine Learning Ensemble"
+    icon: "fa-house"
+    period: "Feb 2026 – Apr 2026"
+    tag: ""
+    description: "Predicted residential house sale prices to assist real estate valuation and investment decision-making, addressing the need for accurate, data-driven pricing in the housing market."
+    details:
+      - key: "Data"
+        val: "Kaggle Ames Housing dataset — 1,460 training samples, 81 raw features including physical attributes (area, year built, quality ratings) and categorical variables (zoning, neighborhood, sale condition)"
+      - key: "Approach"
+        val: "Built a supervised ML pipeline covering data preprocessing (StandardScaler, OneHotEncoder, SimpleImputer), feature engineering (PropertyAge, TotalSF, TotalBath), PCA dimensionality reduction, and hyperparameter tuning via 3-fold GridSearchCV across Linear Regression, Random Forest, XGBoost (GPU-accelerated via CUDA), and MLP neural network; evaluated individual models, average ensemble, and stacking ensemble (XGBoost as meta-learner)"
+      - key: "Outcome"
+        val: "XGBoost achieved the best individual RMSE of <strong>0.138</strong> on test data; stacking ensemble further improved prediction accuracy; Kaggle submission RMSE: <strong>0.134</strong>"
+    github: "https://github.com/MrMister1218/ML-House_Price_Predict"
+
+  - title: "Real-Time License Plate Recognition System (ALPR)"
+    icon: "fa-car"
+    period: "Feb 2026 – Apr 2026"
+    tag: ""
+    description: "Global vehicle population growth has created urgent demand for automated traffic management. This project developed a deep learning-based ALPR system to automatically detect and recognize license plates from images and video streams in real time."
+    details:
+      - key: "Data"
+        val: "COCO pre-trained YOLOv8 for vehicle detection; Roboflow license plate dataset (~5,000 images, YOLO format) fine-tuned on Hong Kong plate formats — supporting English letters + digits including special and personalized plates"
+      - key: "Approach"
+        val: "Two-stage cascade detection: YOLOv8 (COCO) → YOLOv8 (fine-tuned) for plate localization; EasyOCR CRNN (CNN + LSTM + CTC Loss) for OCR; 4-step preprocessing pipeline: 2.5× super-resolution → grayscale → bilateral filtering → Otsu binarization; track-by-position + OCR frequency voting for temporal stability"
+      - key: "Outcome"
+        val: "Built a complete Streamlit Web app with four input modes (image upload, photo capture, video upload, WebRTC live camera); static image recognition achieved 95–100% accuracy; structured CSV export for downstream traffic management systems; modular architecture enables independent module upgrades"
+      - key: "Contribution"
+        val: "Led the design and implementation of the Streamlit Web front-end including WebRTC live streaming and real-time result display; fine-tuned YOLOv8 via transfer learning with optimized confidence thresholds and NMS parameters; performed dataset annotation and quality review; designed Hong Kong plate format validation rules and position-aware character correction heuristics; integrated all modules into an end-to-end pipeline"
+    github: "https://github.com/yiplm/automatic-license-plate-recognition"
+
+resume:
+  enabled: true
+  pdf: "./Resume_Dylan.pdf"
+  message: "Interested in my full background? Download my resume for a complete overview."

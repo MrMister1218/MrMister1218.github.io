@@ -86,7 +86,19 @@ body::after {
   pointer-events: none;
 }
 
-.hero-avatar {
+.hero-avatar--img {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow:
+    0 0 0 2px rgba(99,102,241,0.3),
+    0 0 40px rgba(99,102,241,0.5),
+    0 0 80px rgba(34,211,238,0.25);
+  animation: pulse-avatar 3.5s ease-in-out infinite;
+}
+
+
   width: 108px;
   height: 108px;
   border-radius: 50%;
