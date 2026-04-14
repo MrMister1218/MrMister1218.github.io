@@ -114,6 +114,20 @@ title: Dylan Zhou — Data Engineer
   </div>
 </div>
 
+  <div class="project-card">
+    <h3><i class="fas fa-house" style="color: var(--primary); font-size: 0.9em;"></i> House Price Prediction with Machine Learning Ensemble</h3>
+    <span class="project-year">Sep 2024 – Apr 2025</span>
+    <p>Predicted residential house sale prices to assist real estate valuation and investment decision-making, addressing the need for accurate, data-driven pricing in the housing market.</p>
+    <ul>
+      <li><strong>Data:</strong> Kaggle Ames Housing dataset — 1,460 training samples, 81 raw features including physical attributes (area, year built, quality ratings) and categorical variables (zoning, neighborhood, sale condition)</li>
+      <li><strong>Approach:</strong> Built a supervised ML pipeline covering data preprocessing (StandardScaler, OneHotEncoder, SimpleImputer), feature engineering (PropertyAge, TotalSF, TotalBath), PCA dimensionality reduction, and hyperparameter tuning via 3-fold GridSearchCV across Linear Regression, Random Forest, XGBoost (GPU-accelerated via CUDA), and MLP neural network; evaluated individual models, average ensemble, and stacking ensemble (XGBoost as meta-learner)</li>
+      <li><strong>Outcome:</strong> XGBoost achieved the best individual RMSE of <strong>0.138</strong> on test data; stacking ensemble further improved prediction accuracy; Kaggle submission RMSE: <strong>0.134</strong></li>
+    </ul>
+    <a class="project-link" href="https://github.com/MrMister1218/ML-House_Price_Predict" target="_blank">
+      <i class="fab fa-github"></i> View on GitHub
+    </a>
+  </div>
+
 <!-- RESUME -->
 <div class="section">
   <h2 class="section-title"><span class="num">04</span> Resume</h2>
